@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Potion;
+use App\Models\PotionIngredient;
 use App\Services\PotionValidation;
 use Illuminate\Http\Request;
 
@@ -65,10 +66,18 @@ class PotionController extends Controller
 
         try
         {
-            Potion::create([
+            $potion = Potion::create([
                 "name" => $newPotion['name'],
                 'description' => $newPotion['description'],
             ]);
+
+            foreach (session('ingredients') as $ingredient)
+            {
+                PotionIngredient::create([
+                    'potion_id' => $potion->id,
+                    'ingredient_id' => $ingredient->id,
+                ]);
+            }
         }
         catch (\PDOException $message)
         {
