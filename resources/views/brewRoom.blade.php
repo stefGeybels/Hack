@@ -23,22 +23,22 @@
                         <form action="/check-potion" method="POST">
                             @csrf
                             <div class="value">
-                                <input type="checkbox" id="basil" name="basil" value="basil">
-                                <label for="basil"> 
+                                <input type="checkbox" id="basil" name="basil" value="1">
+                                <label for="basil">
                                     <img src= "{{ asset('/img/basil.png')}}">
                                     <p>Basil</p>
                                 </label>
                             </div>
                             <div class="value">
-                                <input type="checkbox" id="basil" name="basil" value="basil">
-                                <label for="basil"> 
+                                <input type="checkbox" id="basil" name="chives" value="1">
+                                <label for="basil">
                                     <img src= "{{ asset('/img/basil.png')}}">
                                     <p>Chives</p>
                                 </label>
                             </div>
                             <div class="value">
-                                <input type="checkbox" id="basil" name="basil" value="basil">
-                                <label for="basil"> 
+                                <input type="checkbox" id="basil" name="lavender" value="1">
+                                <label for="basil">
                                     <img src= "{{ asset('/img/basil.png')}}">
                                     <p>Lavender<p>
                                 </label>
@@ -47,12 +47,16 @@
                         </form>
                     </div>
                 </div>
+
                 <div class="result">
                     <h2 class="h2">Result</h2>
+                    @if(isset($potionStatus))
+                        <p>{{ $potionStatus }}</p>
+                    @endif
                 </div>
             </div>
         </div>
-        
+
     </div>
 
 </body>
