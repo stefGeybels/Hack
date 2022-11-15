@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PotionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [PotionController::class, 'welcome']);
+Route::get('/brewery', [PotionController::class, 'brewery']);
+Route::post('/check-potion', [PotionController::class, 'checkPotion']);
+
+Route::get('/you-must-be-a-wizard', [PotionController::class, 'claimPage']);
+Route::post('/save-potion', [PotionController::class, 'claimPage']);
