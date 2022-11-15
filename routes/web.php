@@ -14,12 +14,12 @@ use App\Http\Controllers\PotionController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('home');
+//});
 
 Route::get('/', [PotionController::class, 'welcome']);
-Route::get('/brewery', [PotionController::class, 'brewery']);
+Route::get('/brewery', [PotionController::class, 'brewery'])->name('brewery');
 Route::post('/check-potion', [PotionController::class, 'checkPotion']);
 
 Route::get('/you-must-be-a-wizard', [PotionController::class, 'claimPage']);
