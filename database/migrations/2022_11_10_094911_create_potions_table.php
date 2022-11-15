@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('potions', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
+            $table->string('description');
             //TODO: ADD PROPERTIES
             $table->timestamps();
         });
