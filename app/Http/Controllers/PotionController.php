@@ -46,7 +46,7 @@ class PotionController extends Controller
 
         if ($kettle->status == "Stable")
         {
-            return redirect()->action([PotionController::class, 'claimPage'])->with(['potion_ids' => $kettle->ingredients]);
+            return redirect()->action([PotionController::class, 'claimPage'])->with(['ingredients' => $kettle->ingredients]);
         }
 
         return view('brewRoom')->with(["potionStatus" =>$kettle->status]);
@@ -54,7 +54,7 @@ class PotionController extends Controller
 
     public function claimPage()
     {
-        return view('potion')->with('ingredients', session('ingredients'));
+        return view('newPotion')->with('ingredients', session('ingredients'));
     }
 
     public function claimSave(Request $request)
@@ -71,13 +71,14 @@ class PotionController extends Controller
                 'description' => $newPotion['description'],
             ]);
 
-            foreach (session('ingredients') as $ingredient)
-            {
-                PotionIngredient::create([
-                    'potion_id' => $potion->id,
-                    'ingredient_id' => $ingredient->id,
-                ]);
-            }
+//            dd(session('ingredients'));
+//            foreach (session('ingredients') as $ingredient)
+//            {
+//                PotionIngredient::create([
+//                    'potion_id' => $potion->id,
+//                    'ingredient_id' => $ingredient->id,
+//                ]);
+//            }
         }
         catch (\PDOException $message)
         {

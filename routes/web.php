@@ -23,4 +23,5 @@ Route::get('/brewery', [PotionController::class, 'brewery'])->name('brewery');
 Route::post('/check-potion', [PotionController::class, 'checkPotion']);
 
 Route::get('/you-must-be-a-wizard', [PotionController::class, 'claimPage']);
-Route::post('/save-potion', [PotionController::class, 'claimPage']);
+Route::get('/save-potion', [PotionController::class, 'claimPage']);
+Route::post('/save-potion', [PotionController::class, 'claimSave']);
