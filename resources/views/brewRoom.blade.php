@@ -32,14 +32,14 @@
                             <div class="value">
                                 <input type="checkbox" id="basil" name="chives" value="1">
                                 <label for="basil">
-                                    <img src= "{{ asset('/img/basil.png')}}">
+                                    <img src= "{{ asset('/img/chives.png')}}">
                                     <p>Chives</p>
                                 </label>
                             </div>
                             <div class="value">
                                 <input type="checkbox" id="basil" name="lavender" value="1">
                                 <label for="basil">
-                                    <img src= "{{ asset('/img/basil.png')}}">
+                                    <img src= "{{ asset('/img/lavender.png')}}">
                                     <p>Lavender<p>
                                 </label>
                             </div>
