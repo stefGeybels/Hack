@@ -1,3 +1,157 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.background img{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.background .text-info{
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.background .text-info .h1{
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.background .text-info button{
+    border-radius: 10px;
+    background-color: #0D312F;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.background .text-info button:hover{
+    background-color: #113F3C;
+}
+
+.background-wizzard{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.background-wizzard .h1{
+    font-weight: 500;
+    font-size: 45px;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.background-wizzard img{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.background-wizzard .old-book{
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.background-wizzard .old-book img{
+    width: 90%;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.background-wizzard .old-book .book-info{
+    width: 60%;
+    display: flex;
+    height: 80vh;
+    gap: 30px;
+}
+
+.background-wizzard .old-book .book-info .ingredients{
+    width: 45%;
+    z-index: 7;
+    padding: 40px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.background-wizzard .old-book .book-info .ingredients .h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.background-wizzard .old-book .book-info .ingredients .ingredient-checkboxes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.background-wizzard .old-book .book-info .ingredients .ingredient-checkboxes .value{
+    display: flex;
+    gap: 5px;
+}
+
+.background-wizzard .old-book .book-info .ingredients .ingredient-checkboxes .value label{
+    display: flex;
+}
+
+.background-wizzard .old-book .book-info .ingredients .ingredient-checkboxes .value label img{
+    width: 30px;
+    height: 30px;
+}
+
+.background-wizzard .old-book .book-info .ingredients .ingredient-checkboxes .value label p{
+    margin-left: 30px;
+}
+
+.background-wizzard .old-book .book-info .ingredients .ingredient-checkboxes .submit-button{
+    background-color: #0D312F;
+}
+
+.background-wizzard .old-book .book-info .result{
+    width: 45%;
+    z-index: 7;
+    padding: 40px 0px 0px 20px;
+    z-index: 7;
+}
+
+.background-wizzard .old-book .book-info .result .h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 45px;
+}
+
