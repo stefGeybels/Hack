@@ -101,7 +101,7 @@ body{
     width: 60%;
     display: flex;
     height: 80vh;
-    gap: 30px;
+    gap: 50px;
 }
 
 .background-wizzard .old-book .book-info .ingredients{
@@ -192,5 +192,37 @@ body{
     font-size: 18px;
     font-weight: 600;
     text-align: center;
+}
+
+.background-wizzard-succes{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+}
+
+.background-wizzard-succes img{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.background-wizzard-succes .h1{
+    font-weight: 500;
+    font-size: 45px;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.background-wizzard-succes .form-save-potion{
+    z-index: 3;
 }
 
