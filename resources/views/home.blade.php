@@ -16,7 +16,7 @@
         <div class="background__text-info text-info">
             <h1 class="h1">Welcome to Coffeecode brewhouse</h1>
             <div class="text-info__button-start-brew button-start-brew">
-                <button><a>Start brewing</a></button>
+                <button><a href="{{ route('brewery') }}">Start brewing</a></button>
             </div>
         </div>
     </div>
