@@ -52,8 +52,19 @@
                     <h2 class="h2">Result</h2>
                     <div class="result-poison">
                         @if(isset($potionStatus))
-                            <img src="{{ asset('/img/potion-1.png')}}"/>
-                            <h6 class="h6">You have poison</h6>
+                            @if($potionStatus == "Explosive")
+                                <img src="{{ asset('/img/potion-3.png')}}"/>
+                                <h6 class="h6">You have explsove posion</h6>
+                            @endif
+                                @if($potionStatus == "Stable")
+                                    <img src="{{ asset('/img/potion-1.png')}}"/>
+                                    <h6 class="h6">You have new Stable posion</h6>
+                                @endif
+{{--                                @if($potionStatus == "3")--}}
+{{--                                    <img src="{{ asset('/img/potion-3.png')}}"/>--}}
+{{--                                    <h6 class="h6">You have new Stable </h6>--}}
+{{--                                @endif--}}
+
                         @endif
                     </div>
                 </div>
