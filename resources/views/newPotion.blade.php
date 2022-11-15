@@ -14,12 +14,15 @@
         <div class="background-wizzard-succes">
             <img src= "{{ asset('/img/background_wizard_room.jpg')}}">
             <h1 class="h1">You need to be a wizard you made a new potion</h1>
-            <div class="form-save-potion">
-                <label for="fname">Name potion:</label><br>
-                <input type="text" id="namePotion" name="namePotion" value="name"><br>
-                <label for="lname">Last name:</label><br>
-                <textarea id="info-potion" name="info-potion"></textarea>
-                <input type="submit" value="Save potion">
+            <div class="old-book">
+                <img src= "{{ asset('/img/old_book.png')}}">
+                <div class="form-save-potion">
+                    <label for="fname">Name potion:</label><br>
+                    <input type="text" id="namePotion" name="namePotion" value="name"><br>
+                    <label for="lname">Last name:</label><br>
+                    <textarea id="info-potion" name="info-potion" rezi></textarea><br>
+                    <input type="submit" value="Save potion" class="submit-button">
+                </div>
             </div>
         </div>
 
