@@ -199,7 +199,6 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
     padding: 0;
 }
@@ -220,6 +219,7 @@ body{
     text-align: center;
     filter: blur(0px);
     -webkit-filter: blur(0px);
+    margin-top: 30px;
 }
 
 .background-wizzard-succes .old-book{
@@ -231,6 +231,7 @@ body{
     filter: blur(0px);
     -webkit-filter: blur(0px);
     margin-left: 10%;
+    margin-top: 40%;
 }
 
 .background-wizzard-succes .old-book img{
@@ -239,16 +240,36 @@ body{
     -webkit-filter: blur(0px);
 }
 
-.background-wizzard-succes .old-book  form .form-save-potion{
+.background-wizzard-succes .old-book .form-save-potion{
     z-index: 3;
-    margin-left: 75px;
+    margin-left: 270px;
+    margin-top: -20%;
 
 }
 
-.background-wizzard-succes .old-book form .form-save-potion textarea{
+.background-wizzard-succes .old-book .form-save-potion textarea{
     resize: none;
     border: 2px solid #0D312F;
     background-color: transparent;
 
 }
+
+.background-wizzard-succes .old-book .form-save-potion input{
+    border: 2px solid #0D312F;
+    background-color: transparent; 
+}
+
+.background-wizzard-succes .old-book .form-save-potion .submit-button{
+    border-radius: 10px;
+    background-color: #0D312F;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+}
+
+
+
 
