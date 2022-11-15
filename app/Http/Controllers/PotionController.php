@@ -13,12 +13,12 @@ class PotionController extends Controller
 {
     public function welcome()
     {
-        return view('Welcome');
+        return view('home');
     }
 
     public function brewery()
     {
-        return view('Brewery');
+        return view('brewRoom');
     }
 
     /**
