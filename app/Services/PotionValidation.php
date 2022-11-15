@@ -19,14 +19,14 @@ class PotionValidation
 
     public function __construct()
     {
-        $this->status = "Explosive";
+        $this->status = $this->statusEnum[1];
     }
 
     public function brew($ingredients)
     {
         foreach ($ingredients as $key => $ingredient)
         {
-            $item = Ingredient::find($ingredient);
+            $item = Ingredient::where('name', $key)->first();
             if ($item != null)
             {
                 array_push($this->ingredients, $item);
@@ -50,9 +50,10 @@ class PotionValidation
             return true;
         }
 
-        if ($this->score % 6 == 0)
+        if ($this->score % 6 > 4)
         {
             $this->status = $this->statusEnum[1];
+            return true;
         }
 
         if (($this->score - 1) % 3 == 0)
