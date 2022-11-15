@@ -16,7 +16,7 @@
         <div class="background__text-info text-info">
             <h1 class="h1">Welcome to Coffeecode brewhouse</h1>
             <div class="text-info__button-start-brew button-start-brew">
-                <button>Start brewing</button>
+                <button><a>Start brewing</a></button>
             </div>
         </div>
     </div>
