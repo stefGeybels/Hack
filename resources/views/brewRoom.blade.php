@@ -50,9 +50,12 @@
 
                 <div class="result">
                     <h2 class="h2">Result</h2>
-                    @if(isset($potionStatus))
-                        <p>{{ $potionStatus }}</p>
-                    @endif
+                    <div class="result-poison">
+                        @if(isset($potionStatus))
+                            <img src="{{ asset('/img/potion-1.png')}}"/>
+                            <h6 class="h6">You have poison</h6>
+                        @endif
+                    </div>
                 </div>
             </div>
         </div>
