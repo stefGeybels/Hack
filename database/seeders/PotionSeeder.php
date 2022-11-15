@@ -17,6 +17,7 @@ class PotionSeeder extends Seeder
     {
         DB::table('potions')->insert([
             "name" => "love potion",
+            "description" => "This is to make somebody fall in love with you"
         ]);
     }
 }

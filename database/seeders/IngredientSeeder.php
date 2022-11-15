@@ -16,17 +16,17 @@ class IngredientSeeder extends Seeder
     public function run()
     {
         DB::table('ingredients')->insert([
-            'name' => 'mare tak',
+            'name' => 'basil',
             'value' => rand(0,30),
         ]);
 
         DB::table('ingredients')->insert([
-            'name' => 'steen gruis',
+            'name' => 'lavender',
             'value' => rand(0,30),
         ]);
 
         DB::table('ingredients')->insert([
-            'name' => 'slakken slijm',
+            'name' => 'chives',
             'value' => rand(0,30),
         ]);
     }

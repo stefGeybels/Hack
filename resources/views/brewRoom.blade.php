@@ -23,23 +23,23 @@
                         <form action="/check-potion" method="POST">
                             @csrf
                             <div class="value">
-                                <input type="checkbox" id="basil" name="basil" value="basil">
-                                <label for="basil"> 
+                                <input type="checkbox" id="basil" name="basil" value="1">
+                                <label for="basil">
                                     <img src= "{{ asset('/img/basil.png')}}">
                                     <p>Basil</p>
                                 </label>
                             </div>
                             <div class="value">
-                                <input type="checkbox" id="basil" name="basil" value="basil">
-                                <label for="basil"> 
-                                    <img src= "{{ asset('/img/basil.png')}}">
+                                <input type="checkbox" id="basil" name="chives" value="1">
+                                <label for="basil">
+                                    <img src= "{{ asset('/img/chives.png')}}">
                                     <p>Chives</p>
                                 </label>
                             </div>
                             <div class="value">
-                                <input type="checkbox" id="basil" name="basil" value="basil">
-                                <label for="basil"> 
-                                    <img src= "{{ asset('/img/basil.png')}}">
+                                <input type="checkbox" id="basil" name="lavender" value="1">
+                                <label for="basil">
+                                    <img src= "{{ asset('/img/lavender.png')}}">
                                     <p>Lavender<p>
                                 </label>
                             </div>
@@ -47,6 +47,7 @@
                         </form>
                     </div>
                 </div>
+
                 <div class="result">
                     <h2 class="h2">Result</h2>
                     <div class="result-poison">
@@ -58,7 +59,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
 </body>
